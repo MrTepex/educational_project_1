@@ -88,9 +88,26 @@ docker-compose exec -it backend  python manage.py migrate
 docker-compose exec -it backend  python manage.py createsuperuser
 # Это команда для создания суперпользователя с правами администратора, тут задашь логин и пароль для админа (почту можно не указывать)
 
+# Чтобы остановить проект в терминале можно нажать ctrl+C или выполнить:
+docker-compose down
+
 # Открой в браузере
 # Бэкенд: http://localhost:8000/admin
 # Фронтенд: http://localhost:3000 (после создания)
+```
+
+## Когда будешь писать код создай для себя новую ветку от ветки main
+```bash
+# Это можно выполнить командой git branch <название ветки>, например:
+git branch frontend-1
+
+# После в нее нужно перейти, чтобы уже в ней писать код
+git checkout frontend-1
+
+# Чтобы залить код в проект на GitHub выполни:
+git push
+
+# Или изучи как это можно делать проще с помощью интрефейса Pycharm, но влюбом случае команды знать полезно.
 ```
 
 ## API Endpoints
